@@ -12,7 +12,7 @@ For using a custom configuration, you can mount the file similar to what is show
 podman run --rm -it \
 	-v `pwd`/matrix.conf:/opt/pantalaimon/matrix.conf:z \
     -p 8008:8008 \
-	quay.io/abn/pantalaimon:0.10.0
+	quay.io/abn/pantalaimon:main
 ```
 
 For configuration specifics, you can refer to the [Pantalaimon README.md](https://github.com/matrix-org/pantalaimon#readme).
@@ -27,7 +27,7 @@ podman run --rm -it \
 	--user 1000:1000 \
 	-v /var/lib/pantalaimon:/opt/pantalaimon/data:z \
     -p 8008:8008 \
-	quay.io/abn/pantalaimon:0.10.0
+	quay.io/abn/pantalaimon:main
 ```
 
 > **Note:** The container users non-root default user. This means that mounted `data` directory requires correct permissions set. Additionally, [ensure user namespaces are dealt with as required for rootless containers](https://www.redhat.com/sysadmin/user-namespaces-selinux-rootless-containers).
