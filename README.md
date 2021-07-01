@@ -1,4 +1,6 @@
 # Pantalaimon Container
+[![Docker Repository on Quay](https://quay.io/repository/abn/pantalaimon/status "Docker Repository on Quay")](https://quay.io/repository/abn/pantalaimon)
+
 This is an unofficial container for the [Pantalaimon Matrix Reverse Proxy](https://github.com/matrix-org/pantalaimon).
 
 ## Configuration
